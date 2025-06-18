@@ -1,0 +1,30 @@
+### Create a new Silhouette
+POST http://localhost:3000/api/silhouette
+Content-Type: application/json
+
+{
+  "name": "Air Jordan 11 Low",
+  "url": "https://custom-kickz.s3.ap-southeast-1.amazonaws.com/models/air-jordan-11-low.glb",
+  "slug": "air-jordan-11-low"
+}
+
+### Get all Silhouettes
+GET http://localhost:3000/api/silhouette
+
+### Get a Silhouette by ID
+GET http://localhost:3000/api/silhouette/
+
+### Get a Silhouette by Slug
+GET http://localhost:3000/api/silhouette/slug/air-jordan-11-low
+
+### Update a Silhouette by ID
+PATCH http://localhost:3000/api/silhouette/{{silhouetteId}}
+Content-Type: application/json
+
+{
+  "name": "Air Max 1 Updated",
+  "url": "https://example.com/airmax1-updated.png"
+}
+
+### Delete a Silhouette by ID
+DELETE http://localhost:3000/api/silhouette/{{silhouetteId}}
