@@ -3,9 +3,9 @@ POST http://localhost:3000/api/silhouette
 Content-Type: application/json
 
 {
-  "name": "Air Jordan 11 Low",
-  "url": "https://custom-kickz.s3.ap-southeast-1.amazonaws.com/models/air-jordan-11-low.glb",
-  "slug": "air-jordan-11-low"
+  "name": "Air Jordan 1",
+  "url": "https://custom-kickz.s3.ap-southeast-1.amazonaws.com/models/air-jordan-1.glb",
+  "slug": "air-jordan-1"
 }
 
 ### Get all Silhouettes
@@ -18,7 +18,7 @@ GET http://localhost:3000/api/silhouette/
 GET http://localhost:3000/api/silhouette/slug/air-jordan-11-low
 
 ### Update a Silhouette by ID
-PATCH http://localhost:3000/api/silhouette/{{silhouetteId}}
+PATCH http://localhost:3000/api/silhouette/air-jordan-11-low
 Content-Type: application/json
 
 {
@@ -27,4 +27,4 @@ Content-Type: application/json
 }
 
 ### Delete a Silhouette by ID
-DELETE http://localhost:3000/api/silhouette/{{silhouetteId}}
+DELETE http://localhost:3000/api/silhouette/air-jordan-11-loww

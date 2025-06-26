@@ -1,6 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { IsUrl } from 'class-validator';
 
 @Schema({ timestamps: true })
 export class Silhouette extends Document {
