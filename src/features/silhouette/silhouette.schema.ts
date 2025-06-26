@@ -18,6 +18,9 @@ export class Silhouette extends Document {
   @Prop({ required: true, unique: true })
   slug: string;
 
+  @Prop({ required: false, type: Object, default: {} })
+  metaData?: Record<string, any>;
+
   createdAt: Date;
   updatedAt: Date;
 }

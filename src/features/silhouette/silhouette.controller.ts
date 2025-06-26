@@ -11,6 +11,7 @@ import {
 } from '@nestjs/common';
 import { SilhouetteService } from './silhouette.service';
 import { IsNotEmpty, IsString, IsUrl } from 'class-validator';
+import { Public } from 'src/common/decorators/public.decorator';
 
 class CreateSilhouetteDto {
   @IsNotEmpty()
@@ -26,6 +27,7 @@ class CreateSilhouetteDto {
   slug: string;
 }
 
+@Public()
 @Controller('api/silhouette')
 export class SilhouetteController {
   constructor(private readonly silhouetteService: SilhouetteService) {}

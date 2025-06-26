@@ -18,12 +18,14 @@ GET http://localhost:3000/api/silhouette/
 GET http://localhost:3000/api/silhouette/slug/air-jordan-11-low
 
 ### Update a Silhouette by ID
-PATCH http://localhost:3000/api/silhouette/air-jordan-11-low
+PATCH http://localhost:3000/api/silhouette/685323def63486ce689e95f0
 Content-Type: application/json
 
 {
-  "name": "Air Max 1 Updated",
-  "url": "https://example.com/airmax1-updated.png"
+  "metaData": {
+    "initialScale": 2.5,
+    "unusedMaterials": ["Material.004"]
+  }
 }
 
 ### Delete a Silhouette by ID
