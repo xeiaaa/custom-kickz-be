@@ -54,11 +54,10 @@ export class ColorwayController {
     @Body() updateDto: UpdateColorwayDto,
   ) {
     if (!user) throw new Error('Unauthorized');
-    return this.colorwayService.update(
-      id,
-      new Types.ObjectId(user._id),
-      updateDto,
-    );
+    return this.colorwayService.update(id, new Types.ObjectId(user._id), {
+      ...updateDto,
+      silhouetteId: new Types.ObjectId(updateDto.silhouetteId),
+    });
   }
 
   @Delete(':id')
