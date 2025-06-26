@@ -30,3 +30,46 @@ Content-Type: application/json
 
 ### Delete a Silhouette by ID
 DELETE http://localhost:3000/api/silhouette/air-jordan-11-loww
+
+### Get all Colorways
+GET http://localhost:3000/api/colorways
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18yeXFZcGxMS1lQS3FTdjBuM1RaSmplbkJYRngiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjUxNzMiLCJleHAiOjE3NTA5NDA3MjIsImZ2YSI6WzAsLTFdLCJpYXQiOjE3NTA5NDA2NjIsImlzcyI6Imh0dHBzOi8vaGVscGVkLWtpdHRlbi04Ni5jbGVyay5hY2NvdW50cy5kZXYiLCJuYmYiOjE3NTA5NDA2NTIsInNpZCI6InNlc3NfMnoyc2t6UDhZckE1Z2NOVEk3cGhOajhjamd4Iiwic3ViIjoidXNlcl8yejJtYmd2aTRLODFwR211RzRtbW9OMkY1RVQiLCJ2IjoyfQ.DywCrKsNzeDqBqEyU1JQGY29yp2lUEGShH2SdFeUrChl99gb1zuFnnjUOtnaW5spTW7WqpHD6sePg4euMIKJG285nSQOWwfa1PUfKsHp8QgjPQ6aW8-Zuz2zGWuYYDBfitJK38Z9E6kyUJrg3IIBKsW7UnT-JBsoR01MEIZAO3zoj7HIQuTkeEGf5-XxNmYLzUiOJVPwZ8pGTKWgW5weg-_3axwBEcz6OxXGRVPxKlO_7GJav9ym3QOwtxfm-JyJLrBLh0oe1vpf1PLJTAhrpCfjMtNGZOWvo8w467tp2nAT672Lqx3u7CehsoOZZfaG86J0MzLYuWjz2rCwt80uqw
+
+
+### Get a Colorway by ID
+GET http://localhost:3000/api/colorways/685323def63486ce689e95f0
+
+### Update a Colorway by ID
+PATCH http://localhost:3000/api/colorways/685323def63486ce689e95f0
+Content-Type: application/json
+
+### Create a Colorway
+POST http://localhost:3000/api/colorways
+Content-Type: application/json
+`Authorization: Bearer eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18yeXFZcGxMS1lQS3FTdjBuM1RaSmplbkJYRngiLCJ0eXAiOiJKV1QifQ.eyJhenAiOiJodHRwOi8vbG9jYWxob3N0OjUxNzMiLCJleHAiOjE3NTA5NDE3NDIsImZ2YSI6WzE3LC0xXSwiaWF0IjoxNzUwOTQxNjgyLCJpc3MiOiJodHRwczovL2hlbHBlZC1raXR0ZW4tODYuY2xlcmsuYWNjb3VudHMuZGV2IiwibmJmIjoxNzUwOTQxNjcyLCJzaWQiOiJzZXNzXzJ6MnNrelA4WXJBNWdjTlRJN3BoTmo4Y2pneCIsInN1YiI6InVzZXJfMnoybWJndmk0SzgxcEdtdUc0bW1vTjJGNUVUIiwidiI6Mn0.CCpfAXwPIMUUWzry9aeRNv3EZMbCJcdlEi_QHIlmQe9__Ghm7YDdcGmiFHTUeSpsTg7QRPvSow2_P0L03kiFxnVaqXn57AD272uPjbvAFMtrIZCBVC1g1Di0DE9Ijd5P5m-QILZpnt4q0bEvIbn6kvZw1YGp1DqsLj6MnycoG2CZ47-ldYduLFBuK0RhxP9gVmjNjmbYTq2ba0DBEAyMKIeVBKKWVTkbrG2LN5McprIj3v-ChRkpCxGqzOVNTeEAJWscSc5fDUk1p4qqRFhm9GoEE0DEXB0NcooMc2qBCYqmseDFZtOEPnvPglmB9DB7Q86v4g32ujzL59WgoVgjRw
+
+{
+  "name": "Raichu",
+  "silhouetteId": "685323def63486ce689e95f0",
+  "materialMap": {
+    "mudguard": "#79C7C5",
+    "insole": "#7F6BA5",
+    "tongue": "#4C8D8C",
+    "tongue.collar": "#4C8D8C",
+    "mudguard.trim": "#FFFFFF",
+    "carbon.fiber.plate.window": "#6C84BE",
+    "lace.strap": "#FFFFFF",
+    "outsole": "#FFFFFF",
+    "outsole.traction": "#79C7C5",
+    "eyelets": "#7F6BA5",
+    "Material.004": "#6C84BE",
+    "shoelace": "#FFFFFF",
+    "seams": "#79C7C5",
+    "midsole": "#4C8D8C",
+    "sockliner.collar": "#7F6BA5",
+    "upper.base": "#79C7C5",
+    "heel.counter": "#6C84BE",
+    "collar.wrap": "#7F6BA5"
+  }
+
+}

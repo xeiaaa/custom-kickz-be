@@ -7,6 +7,7 @@ import { SilhouetteModule } from './features/silhouette/silhouette.module';
 import { AuthModule } from './features/auth/auth.module';
 import { UserModule } from './features/user/user.module';
 import { WebhookModule } from './features/webhook/webhook.module';
+import { ColorwayModule } from './features/colorway/colorway.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { WebhookModule } from './features/webhook/webhook.module';
     UserModule,
     WebhookModule,
     AuthModule,
+    ColorwayModule,
   ],
   controllers: [AppController],
   providers: [AppService],
