@@ -1,4 +1,4 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import { Controller, Get, Query, Param } from '@nestjs/common';
 import { ColorwayService } from './colorway.service';
 import { Public } from 'src/common/decorators/public.decorator';
 
@@ -16,5 +16,11 @@ export class PublicColorwayController {
     const offsetNum = offset ? parseInt(offset, 10) : 0;
 
     return this.colorwayService.findPublic(limitNum, offsetNum);
+  }
+
+  @Get(':id')
+  @Public()
+  findOnePublic(@Param('id') id: string) {
+    return this.colorwayService.findOnePublic(id);
   }
 }

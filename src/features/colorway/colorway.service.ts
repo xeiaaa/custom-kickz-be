@@ -32,6 +32,17 @@ export class ColorwayService {
       .exec();
   }
 
+  async findOnePublic(id: string): Promise<Colorway> {
+    const found = await this.colorwayModel
+      .findById(id)
+      .populate('userId')
+      .populate('silhouetteId')
+      .exec();
+
+    if (!found) throw new NotFoundException('Colorway not found');
+    return found;
+  }
+
   async findOne(id: string, userId: Types.ObjectId): Promise<Colorway> {
     const found = await this.colorwayModel.findOne({ _id: id, userId }).exec();
     if (!found) throw new NotFoundException('Colorway not found');
