@@ -3,6 +3,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { Colorway, ColorwaySchema } from './colorway.schema';
 import { ColorwayService } from './colorway.service';
 import { ColorwayController } from './colorway.controller';
+import { PublicColorwayController } from './public-colorway.controller';
 
 @Module({
   imports: [
@@ -11,6 +12,6 @@ import { ColorwayController } from './colorway.controller';
     ]),
   ],
   providers: [ColorwayService],
-  controllers: [ColorwayController],
+  controllers: [ColorwayController, PublicColorwayController],
 })
 export class ColorwayModule {}

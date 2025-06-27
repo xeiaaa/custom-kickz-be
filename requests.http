@@ -18,12 +18,12 @@ GET http://localhost:3000/api/silhouette/
 GET http://localhost:3000/api/silhouette/slug/air-jordan-11-low
 
 ### Update a Silhouette by ID
-PATCH http://localhost:3000/api/silhouette/685323def63486ce689e95f0
+PATCH http://localhost:3000/api/silhouette/68566e3463aefeaa570338b8
 Content-Type: application/json
 
 {
   "metaData": {
-    "initialScale": 2.5,
+    "initialScale": 2.3,
     "unusedMaterials": ["Material.004"]
   }
 }
